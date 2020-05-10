@@ -27,7 +27,7 @@ describe('All user Grocery Reducer', () => {
         const newState = GroceryDetails(undefined,{});
         expect(newState).toBe(initialState);
       });
-      it('Should return new state with newly added item', () => {
+    it('Should return new state with newly added item', () => {
           const newState = GroceryDetails(initialState,actionCreators.AddItemInUserGroceryList(objectToBePushed));
           expect(newState).toEqual(stateWithAddedItem);
     });

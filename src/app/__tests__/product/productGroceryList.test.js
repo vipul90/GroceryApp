@@ -5,7 +5,7 @@ import ProductGroceryList from '../../grocery/components/product/ProductGroceryL
 import initialState from '../../state/initialState'
 import toJson from 'enzyme-to-json'; //added this line
 import { shallow } from 'enzyme';
-import '../../../setupTests'
+// import '../../../setupTests'
 
 const createStore = configureStore([]);
  

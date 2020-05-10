@@ -5,5 +5,6 @@ module.exports ={
     "!src/app/shared/**/*.{js,jsx}",
     "!**/node_modules/**",
     "!**/vendor/**"
-  ]
+  ],
+  globalSetup: '<rootDir>/setupTests.js',
 }
