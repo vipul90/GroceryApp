@@ -1,7 +1,7 @@
 import constants from '../Helpers/commonConstants';
 import initialState from '../state/initialState';
 import UserGroceryItem from '../Helpers/UserGroceryItem';
-import DateValue from '../Helpers/Utils'
+import DateValue from '../Helpers/Utils';
 
 function GroceryDetails(state =initialState , action ){
 const {type, payload} = action;

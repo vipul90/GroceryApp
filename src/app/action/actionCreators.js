@@ -1,4 +1,4 @@
-import constants from '../Helpers/commonConstants'
+import constants from '../Helpers/commonConstants';
 
 const AddItemInUserGroceryList = (payload) =>{
     return {

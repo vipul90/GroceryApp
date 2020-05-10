@@ -3,7 +3,6 @@ import {Card,CardActions,CardContent,CardMedia,Typography, Grid,Fade,Tooltip }fr
 import AddCartButton from '../../shared/AddCartButton';
 import InfoIcon from '@material-ui/icons/Info';
 import PropTypes from "prop-types";
-// import Fade from '@material-ui/core/Fade';
 
 export default function ProductCard(props){
   const productDetail = props.ProductDetail;
