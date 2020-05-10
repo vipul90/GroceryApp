@@ -8,11 +8,7 @@ import {bindActionCreators} from 'redux'
 // import "@babel/polyfill"
 import CustomCarouselControl from '../../shared/carousel/CarouselControl'
 
-class ProductGroceryList extends React.Component {
-    constructor(props){
-        super(props);
-    }
-    
+class ProductGroceryList extends React.Component {   
     render(){
         return (
             <div data-test="ProductGroceryListComponent">
@@ -29,7 +25,7 @@ class ProductGroceryList extends React.Component {
                       IncreaseItemFn = {this.props.IncreaseItemInUserGroceryList}
                       DecreaseItemFn = {this.props.DecreaseItemInUserGroceryList}
                       RemoveItemFn = {this.props.RemoveItemInUserGroceryList} 
-                      UserDataForItem = {this.props.UserGroceries.find(x=>x !==undefined && x.ItemId == item.ItemId) }></ProductItem>
+                      UserDataForItem = {this.props.UserGroceries.find(x=>x !==undefined && x.ItemId === item.ItemId) }></ProductItem>
                 })}
                 </Grid>
             </div>

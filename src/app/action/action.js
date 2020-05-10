@@ -16,13 +16,13 @@ const {type, payload} = action;
         case constants.REMOVE_USER_GROCERY_ITEM :
             return { 
                 ...state,
-                userGroceryItems: state.userGroceryItems.filter(x=>x.Id != payload.Id)
+                userGroceryItems: state.userGroceryItems.filter(x=>x.Id !== payload.Id)
             }
         case constants.DECREASE_USER_GROCERY_ITEM :
         return { 
             ...state,
             userGroceryItems: state.userGroceryItems.map(item =>{
-                if(item.Id == payload.Id){
+                if(item.Id === payload.Id){
                     var newObj = new UserGroceryItem(item.Id, item.ItemId,DateValue,item.Quantity - 1,item.Price);
                     return newObj;
                 } else{
@@ -35,7 +35,7 @@ const {type, payload} = action;
             return { 
                 ...state,
                 userGroceryItems: state.userGroceryItems.map(item =>{
-                    if(item.Id == payload.Id){
+                    if(item.Id === payload.Id){
                         var newObj = new UserGroceryItem(item.Id, item.ItemId,DateValue,item.Quantity + 1,item.Price);
                         return newObj;
                     } else{

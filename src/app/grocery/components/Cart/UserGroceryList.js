@@ -9,11 +9,7 @@ import {bindActionCreators} from 'redux'
 import PropTypes from "prop-types";
 import EmptyCart from './EmptyCart'
 
-class UserGroceryList extends React.Component {
-    constructor(props){
-        super(props);
-    }
-    
+class UserGroceryList extends React.Component {   
     render(){
         return (
             <div>
@@ -44,7 +40,7 @@ class UserGroceryList extends React.Component {
                             IncreaseItemFn = {this.props.IncreaseItemInUserGroceryList}
                             DecreaseItemFn = {this.props.DecreaseItemInUserGroceryList}
                             RemoveItemFn = {this.props.RemoveItemInUserGroceryList} 
-                            ProductDetail = {this.props.AvailableGroceries.find(x => x !==undefined && x.ItemId == item.ItemId) }>
+                            ProductDetail = {this.props.AvailableGroceries.find(x => x !==undefined && x.ItemId === item.ItemId) }>
                             </UserGroceryItem>
                         })}
                     </Grid></div>) : 

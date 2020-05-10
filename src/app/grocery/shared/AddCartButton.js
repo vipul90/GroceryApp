@@ -7,9 +7,6 @@ import UserGroceryItem from '../../Helpers/UserGroceryItem'
 import DateValue from '../../Helpers/Utils'
 
 class AddCartButton extends React.Component {
-    constructor(props){
-        super(props);
-    }
     AddUserGroceryItem(itemId,itemPrice){
         let payload = new UserGroceryItem(-1,itemId,DateValue,1,itemPrice);
         this.props.AddItemFn(payload);
