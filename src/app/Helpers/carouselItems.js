@@ -1,6 +1,6 @@
-import Everyday_Essentials from '../assests/images/Everyday_Essentials.jpg'
-import Musk_Melon from '../assests/images/Musk_Melon.jpg'
-import Summer_Coolers from '../assests/images/Summer_Coolers.jpg'
+import Everyday_Essentials from '../assests/images/Everyday_Essentials.jpg';
+import Musk_Melon from '../assests/images/Musk_Melon.jpg';
+import Summer_Coolers from '../assests/images/Summer_Coolers.jpg';
 
 const CarouselItems = [
     {

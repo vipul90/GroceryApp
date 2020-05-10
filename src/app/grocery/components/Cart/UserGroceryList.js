@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { Grid } from '@material-ui/core';
-import '../../Css/Grocery.css'
-import UserGroceryItem from './UserGroceryItem'
-import {connect} from 'react-redux'
-import * as actionCreators from '../../../action/actionCreators'
-import {bindActionCreators} from 'redux'
-import PropTypes from "prop-types"
-import EmptyCart from './EmptyCart'
+import '../../Css/Grocery.css';
+import UserGroceryItem from './UserGroceryItem';
+import {connect} from 'react-redux';
+import * as actionCreators from '../../../action/actionCreators';
+import {bindActionCreators} from 'redux';
+import PropTypes from "prop-types";
+import EmptyCart from './EmptyCart';
 
 class UserGroceryList extends React.Component {   
     render(){

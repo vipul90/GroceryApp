@@ -1,5 +1,5 @@
-import React ,{Suspense} from 'react'
-import PropTypes from 'prop-types'
+import React ,{Suspense} from 'react';
+import PropTypes from 'prop-types';
 
 const LazyComponent = ({component:Component,...rest}) =>{
     return(

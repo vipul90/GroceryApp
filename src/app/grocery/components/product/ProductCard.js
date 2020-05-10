@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card,CardActions,CardContent,CardMedia,Typography, Grid,Fade,Tooltip }from '@material-ui/core';
-import AddCartButton from '../../shared/AddCartButton'
+import AddCartButton from '../../shared/AddCartButton';
 import InfoIcon from '@material-ui/icons/Info';
 import PropTypes from "prop-types";
 // import Fade from '@material-ui/core/Fade';

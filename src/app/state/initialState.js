@@ -1,8 +1,8 @@
-import GroceryDetailItem from '../Helpers/GroceryDetailItem'
-import DateValue from '../Helpers/Utils'
+import GroceryDetailItem from '../Helpers/GroceryDetailItem';
+import DateValue from '../Helpers/Utils';
 import {Almonds,Apple,Bread,Cucumber,Flour,Grapes,Guava,Lichi,Mangoes,Milk,Mushrooms,Onion,Pomegranate,
-    Sanitizer,Sugar,VegetableOil} from '../grocery/shared/import-images/file'
-import ProductItemDesciption from './itemDescription'
+    Sanitizer,Sugar,VegetableOil} from '../grocery/shared/import-images/file';
+import ProductItemDesciption from './itemDescription';
 
 const initialState = {
     error: null,

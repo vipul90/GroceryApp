@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import GroceryDetails from '../action/action'
+import GroceryDetails from '../action/action';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReducers = combineReducers({GroceryDetails});

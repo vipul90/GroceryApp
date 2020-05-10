@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Grid } from '@material-ui/core';
-import ProductCard from './ProductCard'
+import ProductCard from './ProductCard';
 
 export default function ProductItem(props){    
        return (

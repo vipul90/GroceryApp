@@ -1,11 +1,11 @@
-import React from 'react'
-import { Grid } from '@material-ui/core'
-import '../../Css/Grocery.css'
-import ProductItem from './ProductItem'
-import {connect} from 'react-redux'
-import * as actionCreators from '../../../action/actionCreators'
-import {bindActionCreators} from 'redux'
-import CustomCarouselControl from '../../shared/carousel/CarouselControl'
+import React from 'react';
+import { Grid } from '@material-ui/core';
+import '../../Css/Grocery.css';
+import ProductItem from './ProductItem';
+import {connect} from 'react-redux';
+import * as actionCreators from '../../../action/actionCreators';
+import {bindActionCreators} from 'redux';
+import CustomCarouselControl from '../../shared/carousel/CarouselControl';
 import PropTypes from "prop-types";
 
 class ProductGroceryList extends React.Component {   

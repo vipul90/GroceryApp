@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { NavLink } from "react-router-dom";
 import {Grid} from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
