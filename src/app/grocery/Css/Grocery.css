@@ -80,3 +80,7 @@
     max-width: 100%;
     display: block;
   }
+
+  .noQuantiy{
+      font-size: 1.3em;
+  }

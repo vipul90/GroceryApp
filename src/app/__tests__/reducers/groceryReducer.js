@@ -1,10 +1,11 @@
+/*global describe beforeEach it expect*/
 
-import constants from '../../Helpers/commonConstants';
 import initialState from '../../state/initialState';
 import UserGroceryItem from '../../Helpers/UserGroceryItem';
 import DateValue from '../../Helpers/Utils';
 import GroceryDetails from '../../action/action';
-import * as actionCreators from '../../action/actionCreators'
+import * as actionCreators from '../../action/actionCreators';
+
 const objectToBePushed = new UserGroceryItem(-1,2, DateValue,1,200);
 const addInitialItem = ()=>{
     const updatedState= {

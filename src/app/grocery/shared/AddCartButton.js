@@ -43,7 +43,7 @@ class AddCartButton extends React.Component {
                     {userDetail.Quantity !== productDetail.Quantity ?
                         <AddCircleOutlineIcon  onClick={this.IncreaseUserGroceryItem.bind(this,userDetail.Id)}/> :
                         <Tooltip title=
-                        {<div><div><strong>Limited quantity available.</strong></div>You can't add more of this item</div>} arrow>
+                        {<div className="noQuantiy"><div><strong>Limited quantity available.</strong></div>You can't add more of this item</div>} arrow>
                             <AddCircleOutlineIcon style={{color:'lightgrey'}} />
                         </Tooltip>}
                 </div>)}

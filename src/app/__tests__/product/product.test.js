@@ -1,3 +1,5 @@
+/*global describe it expect*/
+
 import initialState from '../../state/initialState';
 
 describe('Product tests', () => {
