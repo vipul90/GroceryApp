@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import UserGroceryItem from '../../Helpers/UserGroceryItem'
 import DateValue from '../../Helpers/Utils'
 import PropTypes from "prop-types";
+import Fade from '@material-ui/core/Fade';
 
 class AddCartButton extends React.Component {
     AddUserGroceryItem(itemId,itemPrice){
@@ -42,8 +43,8 @@ class AddCartButton extends React.Component {
                     <span className="spanCardActions">{userDetail.Quantity}</span>
                     {userDetail.Quantity !== productDetail.Quantity ?
                         <AddCircleOutlineIcon  onClick={this.IncreaseUserGroceryItem.bind(this,userDetail.Id)}/> :
-                        <Tooltip title=
-                        {<div className="noQuantiy"><div><strong>Limited quantity available.</strong></div>You can&apos;t add more of this item</div>} arrow>
+                        <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }} title=
+                        {<div className="noQuantiy"><div><em><strong>Limited quantity available.</strong></em></div>You can&apos;t add more of this item</div>} arrow>
                             <AddCircleOutlineIcon style={{color:'lightgrey'}} />
                         </Tooltip>}
                 </div>)}

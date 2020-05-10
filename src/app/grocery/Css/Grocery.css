@@ -82,5 +82,9 @@
   }
 
   .noQuantiy{
-      font-size: 1.3em;
-  }
+    font-size: 1.3em;
+}
+
+.product-Description{
+    font-size: 1.0em;
+}

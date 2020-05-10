@@ -2,11 +2,12 @@ import GroceryDetailItem from '../Helpers/GroceryDetailItem'
 import DateValue from '../Helpers/Utils'
 import {Almonds,Apple,Bread,Cucumber,Flour,Grapes,Guava,Lichi,Mangoes,Milk,Mushrooms,Onion,Pomegranate,
     Sanitizer,Sugar,VegetableOil} from '../grocery/shared/import-images/file'
+import ProductItemDesciption from './itemDescription'
 
 const initialState = {
     error: null,
     availableGroceryList:[
-        new GroceryDetailItem(1,'Almonds',10,DateValue,80.50,'200 gm',Almonds),
+        new GroceryDetailItem(1,'Almonds',10,DateValue,80.50,'200 gm',Almonds,ProductItemDesciption.AlmondsDesc),
         new GroceryDetailItem(2,'Apple',5,DateValue,400,'2 Kg',Apple),
         new GroceryDetailItem(14,'Hand Sanitizer',2,DateValue,750,'2 l',Sanitizer),
         new GroceryDetailItem(3,'Bread',4,DateValue,30,'200 gm',Bread),
