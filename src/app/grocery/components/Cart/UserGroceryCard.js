@@ -14,7 +14,6 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
 import PropTypes from "prop-types";
-import { prototype } from 'stream';
 
 const useStyles = makeStyles(() => ({
   cardRoot: {
@@ -127,6 +126,8 @@ export default function UserGroceryCard(props) {
   );
 }
 
-UserGroceryCard.prototype ={
-  
+UserGroceryCard.propTypes  = {
+  ProductDetail : PropTypes.object,
+  UserDataForItem : PropTypes.object,
+  RemoveItemFn : PropTypes.func
 }

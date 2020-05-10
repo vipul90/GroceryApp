@@ -57,6 +57,7 @@ UserGroceryList.propTypes = {
     IncreaseItemInUserGroceryList: PropTypes.func,
     DecreaseItemInUserGroceryList: PropTypes.func,
     RemoveItemInUserGroceryList: PropTypes.func,
+    TotalQuantity : PropTypes.number
   };
   
 const mapDispatchToProps = (dispatch) =>{

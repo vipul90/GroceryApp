@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card,CardActionArea,CardActions,CardContent,CardMedia,Typography }from '@material-ui/core';
 import AddCartButton from '../../shared/AddCartButton'
+import PropTypes from "prop-types";
 
 export default function ProductCard(props){
   const productDetail = props.ProductDetail;
@@ -32,6 +33,9 @@ export default function ProductCard(props){
       </div>
     </Card>
   )
+}
+ProductCard.propTypes ={
+  ProductDetail : PropTypes.object
 }
 
 

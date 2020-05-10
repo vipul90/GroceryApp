@@ -5,6 +5,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import UserGroceryItem from '../../Helpers/UserGroceryItem'
 import DateValue from '../../Helpers/Utils'
+import PropTypes from "prop-types";
 
 class AddCartButton extends React.Component {
     AddUserGroceryItem(itemId,itemPrice){
@@ -50,5 +51,13 @@ class AddCartButton extends React.Component {
        );
     }
 }
+AddCartButton.propTypes = {
+    ProductDetail: PropTypes.object,
+    UserDataForItem: PropTypes.array,
+    AddItemFn: PropTypes.func,
+    IncreaseItemFn: PropTypes.func,
+    DecreaseItemFn: PropTypes.func,
+    RemoveItemFn: PropTypes.func
+  };
 
 export default AddCartButton;

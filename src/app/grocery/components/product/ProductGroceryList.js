@@ -5,8 +5,8 @@ import ProductItem from './ProductItem'
 import {connect} from 'react-redux'
 import * as actionCreators from '../../../action/actionCreators'
 import {bindActionCreators} from 'redux'
-// import "@babel/polyfill"
 import CustomCarouselControl from '../../shared/carousel/CarouselControl'
+import PropTypes from "prop-types";
 
 class ProductGroceryList extends React.Component {   
     render(){
@@ -32,6 +32,15 @@ class ProductGroceryList extends React.Component {
         );
     }
 }
+
+ProductGroceryList.propTypes = {
+    UserGroceries: PropTypes.array,
+    AvailableGroceries: PropTypes.array,
+    AddItemInUserGroceryList: PropTypes.func,
+    IncreaseItemInUserGroceryList: PropTypes.func,
+    DecreaseItemInUserGroceryList: PropTypes.func,
+    RemoveItemInUserGroceryList: PropTypes.func
+  };
 
 const mapDispatchToProps = (dispatch) =>{
     return {

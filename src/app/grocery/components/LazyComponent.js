@@ -1,4 +1,5 @@
 import React ,{Suspense} from 'react'
+import PropTypes from 'prop-types'
 
 const LazyComponent = ({component:Component,...rest}) =>{
     return(
@@ -9,5 +10,9 @@ const LazyComponent = ({component:Component,...rest}) =>{
         </React.Fragment>
     )
 }
+
+LazyComponent.propTypes = {
+    component: PropTypes.object
+  };
 
 export default LazyComponent;
