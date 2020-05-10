@@ -27,6 +27,13 @@ const RemoveItemInUserGroceryList= (payload) =>{
     }
 }
 
+const ClearUserCart= (payload) =>{
+    return {
+        type:constants.CLEAR_USER_CART,
+        payload : payload
+    }
+}
 
 
-export {AddItemInUserGroceryList,RemoveItemInUserGroceryList,IncreaseItemInUserGroceryList,DecreaseItemInUserGroceryList}
+
+export {AddItemInUserGroceryList,RemoveItemInUserGroceryList,IncreaseItemInUserGroceryList,DecreaseItemInUserGroceryList,ClearUserCart}

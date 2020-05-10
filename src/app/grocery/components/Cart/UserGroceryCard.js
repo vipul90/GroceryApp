@@ -1,10 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Card,CardContent,CardMedia,Typography,Grid, Button } from '@material-ui/core';
-import {Dialog,DialogActions,DialogContent,DialogContentText,DialogTitle } from '@material-ui/core';
+import {Card,CardContent,CardMedia,Typography,Grid } from '@material-ui/core';
 import AddCartButton from '../../shared/AddCartButton'
 import DeleteIcon from '@material-ui/icons/Delete';
 import PropTypes from "prop-types";
+import CustomDialog from '../../shared/custom-dialog/dialog'
 
 const useStyles = makeStyles(() => ({
   cardRoot: {
@@ -46,6 +46,7 @@ export default function UserGroceryCard(props) {
     setOpen(false);
   };
   return (  
+    
     <Card className={styles.cardRoot}>
       <CardMedia
         className="cardMedia"
@@ -61,28 +62,9 @@ export default function UserGroceryCard(props) {
                     </Typography>
                 </Grid>               
                 <Grid item xs={2} sm={2}  md={2} lg={1}>
-                    <DeleteIcon onClick={handleClickOpen}></DeleteIcon>
-                    <Dialog
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="alert-dialog-title"
-                    aria-describedby="alert-dialog-description">
-                    <DialogTitle id="alert-dialog-title">{"Are You Sure?"}</DialogTitle>
-                    <DialogContent>
-                    <DialogContentText id="alert-dialog-description">
-                        Do you want to delete {productDetail.ItemName} ?
-                    </DialogContentText>
-                    </DialogContent>
-                    <DialogActions>
-                    <Button variant="contained"  onClick={handleClose} color="primary" autoFocus>
-                        No
-                    </Button>
-                    <Button variant="contained" onClick={() => {RemoveItemFromrGroceryList(userDetail.Id)}} color="primary">
-                        Yes
-                    </Button>
-                   
-                    </DialogActions>
-                </Dialog>
+                    <DeleteIcon onClick={handleClickOpen}></DeleteIcon> 
+                    <CustomDialog open = {open} ItemName ={productDetail.ItemName} ItemId ={userDetail.Id} 
+                        NoHandler = {handleClose} YesHandler ={RemoveItemFromrGroceryList}></CustomDialog>
                 </Grid>
             </Grid>
         </div>

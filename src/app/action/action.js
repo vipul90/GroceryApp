@@ -31,7 +31,6 @@ const {type, payload} = action;
             })
         }
         case constants.INCREASE_USER_GROCERY_ITEM :
-            
             return { 
                 ...state,
                 userGroceryItems: state.userGroceryItems.map(item =>{
@@ -43,6 +42,11 @@ const {type, payload} = action;
                     }
                 })
             }
+        case constants.CLEAR_USER_CART :
+        return { 
+            ...state,
+            userGroceryItems: state.userGroceryItems.slice(0,0)
+        }
         default:
         return state;
     }

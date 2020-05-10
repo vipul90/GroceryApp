@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route, Router, Redirect } from "react-router-dom";
 import {history } from './services/history'
-import Home from './Home';
+import Home from './home';
 import Store from './store/store';
 import { Provider } from 'react-redux';
 import ProductGroceryList from './grocery/components/product/ProductGroceryList';

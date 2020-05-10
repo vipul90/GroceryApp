@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid , Button } from '@material-ui/core';
 import '../../Css/Grocery.css';
 import UserGroceryItem from './UserGroceryItem';
 import {connect} from 'react-redux';
@@ -8,11 +8,27 @@ import {bindActionCreators} from 'redux';
 import PropTypes from "prop-types";
 import EmptyCart from './EmptyCart';
 
-class UserGroceryList extends React.Component {   
+class UserGroceryList extends React.Component {  
+    constructor(props){
+        super(props);
+        this.ClearCartHandler = this.clearCart.bind(this);
+    } 
+    clearCart(){
+        this.props.ClearUserCart({});
+    }
     render(){
         return (
             <div>
-                <div className="myCartGrid"><strong>My Shopping Cart</strong></div> 
+                    <Grid container className ="gridBelowMargin">
+                            <Grid item xs={9} sm={9}  md={10} lg={11}>
+                            <div className="myCartGrid"><strong>My Shopping Cart</strong></div> 
+                            </Grid>
+                            <Grid item xs={3} sm={3}  md={2} lg={1}>
+                            {this.props.TotalQuantity > 0 ?  <Button onClick ={this.ClearCartHandler} color="primary"> Clear Cart </Button> : '' }
+                            </Grid>
+                        </Grid>
+
+               
                 {this.props.TotalQuantity > 0 ? 
                 ( <div><Grid container>
                         <Grid item xs={12} >
@@ -56,6 +72,7 @@ UserGroceryList.propTypes = {
     IncreaseItemInUserGroceryList: PropTypes.func,
     DecreaseItemInUserGroceryList: PropTypes.func,
     RemoveItemInUserGroceryList: PropTypes.func,
+    ClearUserCart : PropTypes.func,
     TotalQuantity : PropTypes.number
   };
   
