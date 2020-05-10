@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Note
+I have taken images which are shown in the app from google, big-basket, and from other sources. These are just for demo purpose. If it is client project, I will get it done from UX team and use SVG.
 
 ## Available Scripts
 
@@ -26,6 +27,8 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### 'npm run lint'
 
 ## Learn More
 
