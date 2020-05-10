@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AppRoutes from './appRoutes';
 import './App.css';
-import './serviceWorker';
+
 
 export default class App extends Component {
     render(){
