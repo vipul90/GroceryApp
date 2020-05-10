@@ -5,7 +5,6 @@ import UserGroceryItem from './UserGroceryItem'
 import {connect} from 'react-redux'
 import * as actionCreators from '../../../action/actionCreators'
 import {bindActionCreators} from 'redux'
-// import "@babel/polyfill"
 import PropTypes from "prop-types"
 import EmptyCart from './EmptyCart'
 

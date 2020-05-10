@@ -1,4 +1,4 @@
-import Home_Care from '../assests/images/Home_Care.jpg'
+import Everyday_Essentials from '../assests/images/Everyday_Essentials.jpg'
 import Musk_Melon from '../assests/images/Musk_Melon.jpg'
 import Summer_Coolers from '../assests/images/Summer_Coolers.jpg'
 
@@ -15,8 +15,8 @@ const CarouselItems = [
     },
     {
         id:3,
-        ItemImage: Home_Care,
-        Name: "Home Care Essentials"
+        ItemImage: Everyday_Essentials,
+        Name: "Every Essentials"
     },
 ]
 
